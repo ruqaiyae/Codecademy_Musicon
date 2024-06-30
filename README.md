@@ -28,33 +28,33 @@ Knowing the contents of the documents will help you understand the reasoning beh
       * Add a < ul > element within the nav element.
       * Assign the newly created < ul > element a class of navbar.
 
-3. Inside the <ul> element you just created, insert an <li> element. Nest an <a> element inside the <li> element.
+3. Inside the < ul > element you just created, insert an < li > element. Nest an < a > element inside the < li > element.
 
-4. Assign the <li> element a class attribute of "current".
-The class of "current" has a ruleset in public/style.css which will highlight the <li> element. Therefore, this highlight feature will appear after you link public/style.css in the next assessment!
+4. Assign the < li > element a class attribute of "current".
+The class of "current" has a ruleset in public/style.css which will highlight the < li > element. Therefore, this highlight feature will appear after you link public/style.css in the next assessment!
 
-5. Give the <a> element an href attribute with the value "index.html". Then include the text Home between the opening and closing <a> tags.
+5. Give the < a > element an href attribute with the value "index.html". Then include the text Home between the opening and closing < a > tags.
 
-6. Below the <li> element, create another <li> element that also has a nested <a> element.
+6. Below the < li > element, create another < li > element that also has a nested <a> element.
 
-7. In the <a> element nested in the second <li> element, add an href attribute with the value "store.html". Insert Store into the content of the second <a> element.
+7. In the < a > element nested in the second < li > element, add an href attribute with the value "store.html". Insert Store into the content of the second < a > element.
 Save your progress and check the browser again. You should now see two links in your navbar.
 
-8. Below the second <li> element, create another <li> element that also has a nested <a> element.
+8. Below the second < li > element, create another < li > element that also has a nested < a > element.
 
-9. In the <a> element you just created, add the href attribute with the value "contact.html". Also, insert the text Contact as content.
+9. In the < a > element you just created, add the href attribute with the value "contact.html". Also, insert the text Contact as content.
 Great, you should now have a navbar in index.html, let’s add a navbar to store.html.
 
-10. Copy the entire <ul> element and navigate to store.html. Paste the <ul> element, with the .navbar class, inside the <nav> element.
+10. Copy the entire < ul > element and navigate to store.html. Paste the < ul > element, with the .navbar class, inside the < nav > element.
     
-      * Delete the class attribute from the first <li> element.
-      * Give the second <li> element a class of "current".
+      * Delete the class attribute from the first < li > element.
+      * Give the second < li > element a class of "current".
 Save your progress and visit the Musicon store page to see your added navbar.
 
-11. Navigate to contact.html. Inside the <nav> element, paste in the whole <ul> element that you copied from index.html.
+11. Navigate to contact.html. Inside the < nav > element, paste in the whole < ul > element that you copied from index.html.
 
-      * Delete the entire class attribute from the first <li> element.
-      * Give the last <li> element the .current class.
+      * Delete the entire class attribute from the first < li > element.
+      * Give the last < li > element the .current class.
 Save your progress. Check the browser to see working navbars in all three pages!
 
 #### Adding CSS
