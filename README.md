@@ -49,12 +49,14 @@ Great, you should now have a navbar in index.html, let’s add a navbar to store
     
       * Delete the class attribute from the first < li > element.
       * Give the second < li > element a class of "current".
+
 Save your progress and visit the Musicon store page to see your added navbar.
 
 11. Navigate to contact.html. Inside the < nav > element, paste in the whole < ul > element that you copied from index.html.
 
       * Delete the entire class attribute from the first < li > element.
       * Give the last < li > element the .current class.
+
 Save your progress. Check the browser to see working navbars in all three pages!
 
 #### Adding CSS
@@ -63,14 +65,15 @@ Save your progress. Check the browser to see working navbars in all three pages!
 
       * Add the href attribute to the <link> element and set it to be "public/style.css".
       * Add the rel attribute to the same element and set it to be "stylesheet".
+
 Save your progress, go to the home page in the browser to see the updated style!
 
-13. Navigate to store.html, follow the same steps as the step above to add a <link> element before the closing <head> tag to incorporate the same style sheet into the store page.
+13. Navigate to store.html, follow the same steps as the step above to add a < link > element before the closing < head > tag to incorporate the same style sheet into the store page.
 
-14. Navigate to contact.html, add the same <link> element before the closing <head> tag to incorporate the same style sheet to change the look of the contact page.
+14. Navigate to contact.html, add the same < link > element before the closing <head> tag to incorporate the same style sheet to change the look of the contact page.
 Save your progress to see the updated styles on all three pages.
 
-15. Take a look at the Musicon home page. The current <section> elements that have a class attribute of container are currently positioned to the left and don’t have any margin. It would look better if you centered those <section>s and added some spacing.
+15. Take a look at the Musicon home page. The current < section > elements that have a class attribute of container are currently positioned to the left and don’t have any margin. It would look better if you centered those <section>s and added some spacing.
 Navigate to public/style.css. First, set a 90% width declaration for .container elements. Then add a rule to center the .container class using margin.
 
 16. The .container elements are now centered but the text isn’t. Since you’re only targeting the text in the "#introduction" elements, turn your attention to the #introduction ruleset.
@@ -80,9 +83,10 @@ Add a declaration to the #introduction ruleset to make the text centered.
 
       * Add a top margin of 15%
       * Add a bottom margin of 50%.
+
 Save your progress to see a home page that has proper spacing and centered elements.
 
-18. Now, on the browser, navigate to store page. As it is now, it’s hard to differentiate the individual <article> elements with a class of instrument.
+18. Now, on the browser, navigate to store page. As it is now, it’s hard to differentiate the individual < article > elements with a class of instrument.
 In public/styles.css, add a white background color and an opacity of 0.9 to the .instrument ruleset.
 
 19. Save your progress. The store page now has the instruments right up against each other. You should now add some separation between the different .instrument elements.
@@ -95,7 +99,7 @@ Great work styling the .instrument cards! Save your progress to see the changes 
 
 #### Building the templates
 21. After creating the navbar and adding the styling, now it’s time to build semantic templates using Handlebars.
-Navigate to index.html, to include Handlebars, insert <script src="handlebars.min.js"></script> right after the <link> tag within the <head> element.
+Navigate to index.html, to include Handlebars, insert < script src="handlebars.min.js" ></ script > right after the < link > tag within the < head > element.
 You’ll notice that the Handlebars file is already placed inside the project directory, but you can also use a CDN if you choose.
 
 22. Navigate to store.html, add the same <script> element, as the previous task, on the line after the <link> CSS tag.
