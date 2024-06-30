@@ -19,13 +19,14 @@ Musicon will have three separate web pages: a home page, a store page, and a con
       * Check over what content goes on each page.
       * Look over how public/style.css is separated into sections.
       * Read the properties of the context object.
+
 Knowing the contents of the documents will help you understand the reasoning behind the tasks.
 
 2. Navigate to index.html. Notice that there isn’t a navigation bar.
 
       * Locate the <nav> element.
-      * Add a <ul> element within the nav element.
-      * Assign the newly created <ul> element a class of navbar.
+      * Add a < ul > element within the nav element.
+      * Assign the newly created < ul > element a class of navbar.
 
 3. Inside the <ul> element you just created, insert an <li> element. Nest an <a> element inside the <li> element.
 
