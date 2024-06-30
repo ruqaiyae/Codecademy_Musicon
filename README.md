@@ -35,7 +35,7 @@ The class of "current" has a ruleset in public/style.css which will highlight th
 
 5. Give the < a > element an href attribute with the value "index.html". Then include the text Home between the opening and closing < a > tags.
 
-6. Below the < li > element, create another < li > element that also has a nested <a> element.
+6. Below the < li > element, create another < li > element that also has a nested < a > element.
 
 7. In the < a > element nested in the second < li > element, add an href attribute with the value "store.html". Insert Store into the content of the second < a > element.
 Save your progress and check the browser again. You should now see two links in your navbar.
@@ -61,19 +61,19 @@ Save your progress. Check the browser to see working navbars in all three pages!
 
 #### Adding CSS
 
-12. Now, it’s time to add some style to your website. Navigate to index.html, add a <link> element before the closing <head> tag so that we can use a style sheet to change the look of the home page.
+12. Now, it’s time to add some style to your website. Navigate to index.html, add a < link > element before the closing < head > tag so that we can use a style sheet to change the look of the home page.
 
-      * Add the href attribute to the <link> element and set it to be "public/style.css".
+      * Add the href attribute to the < link > element and set it to be "public/style.css".
       * Add the rel attribute to the same element and set it to be "stylesheet".
 
 Save your progress, go to the home page in the browser to see the updated style!
 
 13. Navigate to store.html, follow the same steps as the step above to add a < link > element before the closing < head > tag to incorporate the same style sheet into the store page.
 
-14. Navigate to contact.html, add the same < link > element before the closing <head> tag to incorporate the same style sheet to change the look of the contact page.
+14. Navigate to contact.html, add the same < link > element before the closing < head > tag to incorporate the same style sheet to change the look of the contact page.
 Save your progress to see the updated styles on all three pages.
 
-15. Take a look at the Musicon home page. The current < section > elements that have a class attribute of container are currently positioned to the left and don’t have any margin. It would look better if you centered those <section>s and added some spacing.
+15. Take a look at the Musicon home page. The current < section > elements that have a class attribute of container are currently positioned to the left and don’t have any margin. It would look better if you centered those < section >s and added some spacing.
 Navigate to public/style.css. First, set a 90% width declaration for .container elements. Then add a rule to center the .container class using margin.
 
 16. The .container elements are now centered but the text isn’t. Since you’re only targeting the text in the "#introduction" elements, turn your attention to the #introduction ruleset.
@@ -99,29 +99,29 @@ Great work styling the .instrument cards! Save your progress to see the changes 
 
 #### Building the templates
 21. After creating the navbar and adding the styling, now it’s time to build semantic templates using Handlebars.
-Navigate to index.html, to include Handlebars, insert < script src="handlebars.min.js" ></ script > right after the < link > tag within the < head > element.
+Navigate to index.html, to include Handlebars, insert < script src="handlebars.min.js" > </ script > right after the < link > tag within the < head > element.
 You’ll notice that the Handlebars file is already placed inside the project directory, but you can also use a CDN if you choose.
 
-22. Navigate to store.html, add the same <script> element, as the previous task, on the line after the <link> CSS tag.
+22. Navigate to store.html, add the same < script > element, as the previous task, on the line after the < link > CSS tag.
 
-23. Navigate back to index.html, you can deliver a template to the browser by including it in a <script> tag.
+23. Navigate back to index.html, you can deliver a template to the browser by including it in a < script > tag.
 
-      * Add another <script> tag below <script> tag for Handlebars.
+      * Add another < script > tag below < script > tag for Handlebars.
       * Give the new tag an id of templateHB.
       * Add the type attribute to the same tag and set it to be "text/x-handlebars-template".
 
 24. Next, start on a simple template for the home page.
-You’ll be adding three elements inside the newly created <script> tag. First add a <h1> element, followed by a <p> element, followed by an <a> element. These elements will not be nested.
+You’ll be adding three elements inside the newly created < script > tag. First add a < h1 > element, followed by a < p > element, followed by an < a > element. These elements will not be nested.
 
-25. Add Handlebars expression to the <h1> and <p> tag.
+25. Add Handlebars expression to the < h1 > and < p > tag.
 
-      * Between the opening and closing <h1> tags, add a {{title}} expression.
-      * Between the opening and closing <p> tags, add a {{body}} expression.
+      * Between the opening and closing < h1 > tags, add a {{title}} expression.
+      * Between the opening and closing < p > tags, add a {{body}} expression.
 
-26. Add the href attribute and text to the <a> tag.
+26. Add the href attribute and text to the < a > tag.
 
-      * Give the <a> tag the href attribute and set it to be "store.html".
-      * Between the opening and closing <a> tags, add the Shop Now text.
+      * Give the < a > tag the href attribute and set it to be "store.html".
+      * Between the opening and closing < a > tags, add the Shop Now text.
 
 27. Inside the #introduction element, add an id of information to the .container element and delete the nested tags.
 
@@ -153,26 +153,26 @@ For the home page you’ll be using the title and body properties. Later on, you
       * Set the innerHTML property on the element returned above to be the compiledHtml.
 
 34. You just created your first templated web page! Now it is time to create your next templated web page with the skills you just learned.
-Navigate back to store.html, create a <script> element that will incorporate Handlebars expressions.
+Navigate back to store.html, create a < script > element that will incorporate Handlebars expressions.
 
-      * In the <head> element, add the <script> tag on the line after the <script> tag for Handlebars.
-      * Give the new <script> an id of templateHB.
+      * In the < head > element, add the < script > tag on the line after the < script > tag for Handlebars.
+      * Give the new < script > an id of templateHB.
       * Add the type attribute to the same tag and set it to be "text/x-handlebars-template".
 
-35. Copy the entire contents of the first <article> with class instrument. Paste the contents inside the newly created <script>.
+35. Copy the entire contents of the first < article > with class instrument. Paste the contents inside the newly created < script >.
 
 36. Currently, you have a template for one instrument, but the Musicon store has four instruments. Conveniently, Handlebars offers the built-in {{each}} block helper to iterate through an array.
 Wrap the .instrument element in the template with the {{each}} block helper. Provide the starting {{each}} expression with an argument of instruments.
 
-37. Now it’s time to replace some hard coded values with Handlebars expressions. Change the value of the src and alt attribute within the <img> tag with a {{this.image}} and {{this.name}} expression respectively.
+37. Now it’s time to replace some hard coded values with Handlebars expressions. Change the value of the src and alt attribute within the < img > tag with a {{this.image}} and {{this.name}} expression respectively.
 
 38. Replace the contents inside the .name, .description, .price and .sale elements with Handlebar expressions. Use the following expressions in their respective fields: {{this.name}}, {{this.description}}, {{this.price}} and {{this.sale}}.
 
 39. You might notice some instruments are on sale and others are not. You can account for this using a built-in Handlebars block helper, {{if}}, which acts like the if conditional in JavaScript.
-Use the {{if}} block helper to display the on-sale price. If the this.sale property is truthy, you should also display the <p> elements that have the classes price, sale and deal. Add an {{else}} section, in case this.sale is falsy, to display the this.price element (without the nested <del> tag).
+Use the {{if}} block helper to display the on-sale price. If the this.sale property is truthy, you should also display the < p > elements that have the classes price, sale and deal. Add an {{else}} section, in case this.sale is falsy, to display the this.price element (without the nested < del > tag).
 
-40. Now, locate the #showcase element. In the <section> that has a class of container, add an id of information. Since you don’t need the hard coded values anymore, delete all the elements that have a class of instrument.
-The #information <section> should be empty but the web page should still be filled with instruments!
+40. Now, locate the #showcase element. In the < section > that has a class of container, add an id of information. Since you don’t need the hard coded values anymore, delete all the elements that have a class of instrument.
+The #information < section > should be empty but the web page should still be filled with instruments!
 
 41. Great, you refactored your code to use Handlebars. Take advantage of your set up template to add a new instrument to Musicon!
 Add another object in the instruments array that has the following properties:
@@ -181,6 +181,7 @@ Add another object in the instruments array that has the following properties:
       * Set the name property to be 'Violin'.
       * Set the description property to be 'A versatile instrument that is suited for any and all occasions. Those wearing tuxedos can strum together a classic. Others who prefer overalls can call it a fiddle and play some folk songs.'.
       * Set the price property to be '$245.00'.
+
 After creating the object successfully, save your progress. You will see the violin added to the store page.
 
 42. Great work! The home and store pages look leagues better than when you started. If you want to challenge yourself, consider:
